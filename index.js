@@ -27,7 +27,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 //=====================
-// ROUTES
+// ROUTES 
 //=====================
 
 // Showing home page
@@ -51,7 +51,6 @@ app.post("/register", async (req, res) => {
 	username: req.body.username,
 	password: req.body.password
 	});
-	
 	return res.status(200).json(user);
 });
 

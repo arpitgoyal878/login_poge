@@ -1,16 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    // home.ejs
-    <h1>This is home page</h1>
+    <style type="text/css" media="screen">
+        body {
+            background-color:   #3e4095;
+        }
+        img
+        {
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+height: 13em;
+width: 13em;
+padding-top: 10px;
+        }
+        h1 {
+            text-align: center;
+            padding-bottom: 20px;
+            font-weight: 900;
+            font-size: 5em;
+            color: aliceblue;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-right: 33%;
+            margin-left: 33%;
+            
+        }
+        .sign{
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #91d8f8;
+            transition: 0.4s;
+            
+        }
+        .login{
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #91d8f8;
+            transition: 0.4s;
+            
+        }
+        /* .logout{
+            border-radius: 10px;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: #91d8f8;
+            color: aliceblue;
+        } */
+        .login:hover
+        {
+            cursor: grab;
+            background-color: #01afef;
+            color: azure;
+        }
+        .sign:hover
+        {
+            cursor: grab;
+            background-color: #01afef;
+            color: azure;
+        }
+        .logout:hover
+        {
+            cursor: grabbing;
+            background-color: #01afef;
+            color: azure;
+        }
+    </style>
+</head>
 
-    <li><a href="/register">Sign up!!</a></li>
-    <li><a href="/login">Login</a></li>
-    <li><a href="/logout">Logout</a></li>
-  </body>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Maulana_Azad_National_Institute_of_Technology_Logo.png"
+        alt="error">
+
+    <h1>Welcome!</h1>
+    <div class="buttons">
+        <a href="/register"><button class="sign">Sign up!!</button></a>
+        <a href="/login"><button class="login">Login</button></a>
+        <!-- <a href="/logout"><button class="logout">Logout</button></a> -->
+    </div>
+    
+</body>
+
 </html>
